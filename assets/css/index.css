@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Mohave:wght@700&family=Nothing+You+Could+Do&display=swap');
+
+:root {
+	--primary-red: #9c062b;
+	--lato-font-family: 'Anta', sans-serif;
+    --text-color: #707070;
+
+
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+.video_container {
+	min-width: 100vw;
+	min-height: 100vh;
+	max-height: 100vh;
+	position: relative;
+	overflow: hidden;
+	background: var(--primary-red);
+	background-image: url('./media/cover.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.video_container video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #490418;
+	z-index: 1;
+	mix-blend-mode: soft-light;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 7rem;
+	z-index: 25;
+	color: rgb(255, 238, 238);
+	padding: 0 3%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family:  var(--lato-font-family);
+    font-weight: 400;
+
+}
+
+.header.transparent {
+	background: transparent;
+}
+
+
+.content_container {
+	position: absolute;
+	top: 40%;
+	left: 5%;
+	z-index: 10;
+	color: white;
+	text-transform: uppercase;
+}
+.content_container .title {
+	font-size: 10rem;
+	font-family: 'Mohave', sans-serif;
+	margin-bottom: -3rem;
+}
+
+.content_container .subtitle {
+	font-size: 3rem;
+	font-family: var(--lato-font-family);
+	color: #ececec;
+	margin-bottom: 3rem;
+}
+
+.content_container .available {
+	font-size: 2rem;
+	font-family: var(--lato-font-family);
+	opacity: 0.8;
+}
+
+.order_button {
+	background: var(--primary-red);
+	color: white;
+	padding: 1rem;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.1s;
+	border: none;
+	margin: 2rem 0;
+	text-transform: capitalize;
+}
+
+.order_button:focus {
+	outline: none;
+}
+
+.order_button:active {
+	transform: translate(0, 10px);
+}
+
+
+.nav__logo{
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+  }

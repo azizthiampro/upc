@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/c91d5b3fbe.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="assets/css/forum.css">
+
+    <title>Forum </title>
+
+    
+
+</head>
+
+<body>
+
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+    <header class="l-header " id="header">
+        <nav class="nav bd-container modal-open">
+
+            <a href="index.html" class="nav__logo"> <table> <tr><td><img src="assets/img/logo.png"  alt="" width="50" height="50"></td><td>Université Paris Cité</td></tr></table> </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+
+                    <li class="nav__item"><a href="acceuil.html" class="nav__link ">Welcome</a></li>
+                    <li class="nav__item"><a href="pariscite.html" class="nav__link">UPC</a></li>
+                    <li class="nav__item"><a href="forum.html" class="nav__link active-link">Forum</a></li>
+                  <li><i class="fa-solid fa-sun change-theme" id="theme-button"></i></li>
+
+
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <div id="blank"> </div>
+    <br>
+    <br>
+
+    <main class="l-main">
+        
+        <section class="about section bd-container" id="video">
+            <div class="about__container  bd-grid">
+                <iframe class="home__img" height="300"  src="https://www.youtube.com/embed/MQZEVKQ842w?si=wrYIP8K9ZD6GIEoB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <div class="about__data">
+                    <span class="section-subtitle about__initial">Imersion</span>
+                    <h2 class="section-title about__initial">Resume</h2>
+                    <p class="about__description"> This video summarize everything you need to know about our community.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>        <section class="about section bd-container" id="forum">
+            <div class="about__container  bd-grid">
+                <div class="about__data">
+                    <span class="section-subtitle about__initial">What about us ?</span>
+                    <h2 class="section-title about__initial">Welcome to our forum</h2>
+                    <p class="about__description"> Since 2020, this platform helped more than thousands students to graduate. <br>Feel free to ask the questions you want.
+                </div>
+                <img src="assets/img/forum.svg" alt="" class="home__img">
+
+
+       </div>
+        </section>
+        <br>
+
+
+        <section class="menu section bd-container" id="images">
+            <span class="section-subtitle">Images of our last meeting</span>
+            <h2 class="section-title">Memories of the last year </h2>
+            
+            <table>
+    
+                <tr>
+                    <td>
+                         <div id="image1"><img  src="assets/img/uv1.jpeg" alt="IMG 1" width="600" height="500" onclick="openModal1();currentSlide(1)" class="hover-shadow cursor"> </div>
+                    </td>
+                    
+                    <td>
+            
+                        <div id="image2" ><img src="assets/img/uv2.jpeg" alt="IMG 2" width="600" height="500" onclick="openModal1();currentSlide(2)" class="hover-shadow cursor"> 
+                        </div>
+                    </td>
+            
+                  
+                </tr>
+                
+               </table>
+               <div id="myModal1" class="modal1">
+                <span class="close1 cursor" onclick="closeModal1()">&times;</span>
+                <div class="modal-content1">
+              
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="assets/img/uv1.jpeg" style="width:100%" >
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="assets/img/uv2.jpeg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="assets/img/lib1.jpeg" style="width:100%">
+                  </div>
+                  
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="assets/img/lib2.jpeg" style="width:100%">
+                  </div>
+                  
+                  <div class="mySlides">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="assets/img/univ6.jpeg" style="width:100%">
+                  </div>
+                  
+                 
+                  
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+              
+              
+                  <div class="column">
+                    <img class="demo cursor" src="assets/img/uv1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Courses">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="assets/img/uv2.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Graduations">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="assets/img/lib1.jpeg" style="width:100%" onclick="currentSlide(3)" alt="library">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="assets/img/lib2.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Science">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="assets/img/univ6.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Doctor">
+                  </div>
+                  
+                </div>
+              </div>
+              <p> <b style="color:#9c062b ;">CLICK</b>  on one image to see our album.</p>
+               
+               
+          
+
+    
+        </section>
+
+   
+
+
+     
+
+    </main>
+
+    <footer class="footer section bd-container">
+        <div class="footer__container bd-grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">Univerité Paris Cité </a>
+                <span class="footer__description">France, Paris</span>
+                
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Classes</h3>
+                <ul>
+                    <li>E-learning</li>
+                    <li>Datascience</li>
+                    <li>Mathematics</li>
+                    <li>Datascience</li>
+
+
+
+                    
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Information</h3>
+                <ul>
+<li>Num: 0233043908</li>
+<li>univ@paris-u.fr</li>
+
+
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="footer__copy">&#169; 2024 Abdou Aziz Thiam. Github: <a class="urlimg"  href="https://github.com/azizthiampro" style="color:#9c062b ;">@azizthiampro</a></p>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/index.js"></script>
+
+</body>
+
+</html>

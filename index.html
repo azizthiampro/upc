@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Welcome </title>
+		<link rel="stylesheet" href="/assets/css/index.css" />
+        <script src="https://kit.fontawesome.com/c91d5b3fbe.js" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+		<header class="header">
+            <table>
+                <tr><td>
+                    <img src="assets/img/logo.png"  alt="" width="60" height="60"></td>
+                </td>
+            <td>
+                <h1>Paris Cité University</h1>
+            </td></tr>
+            </table>
+
+		</header>
+
+
+		<section class="video_container">
+			<video autoplay loop muted src="assets/img/background2.mp4"></video>
+			<div class="overlay"></div>
+           
+
+			<section class="content_container">
+                
+				<h1 class="title">Forum</h1>
+				<h4 class="subtitle">Share, talk & learn</h4>
+
+				<button onclick="goToAcceuil()" class="order_button" >Click for more <i class="fa-solid fa-arrow-right"></i></button>
+			</section>
+
+
+		</section>
+        <script>
+            function goToAcceuil() {
+                window.location.href = "acceuil.html";
+            }
+        </script>
+	</body>
+</html>
